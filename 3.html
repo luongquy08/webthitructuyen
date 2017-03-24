@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="vi">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/style_footer.css">
+      <link rel="stylesheet" href="css/style_login_form.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/style_contact_form.css">
+      <link rel="shortcut icon" href="img/favicon_uet.ico">
+      <title>Hệ thống thi trực tuyến lớn nhất Việt Nam | Trang hồ sơ</title>
+   </head>
+   <body>
+      <div id="header">
+         <div class="container">
+            <div class="row logo-banner">
+               <div class="col-md-2 col-sm-2 col-xs-1"><a href="http://uet.vnu.edu.vn/" target="_blank"><img src="img/logo/uet_logo.png" class="img-logo img-logo-left img-reponsive"></a></div>
+               <div class="col-md-8 col-sm-8 col-xs-12"><a href="http://uet.vnu.edu.vn/ts" target="_blank"><img src="img/banner/ts2017.jpg" class="img-banner img-reponsive"></a></div>
+               <div class="col-md-2 col-sm-2 col-xs-1"><a href="http://vnu.edu.vn/home" target="_blank"><img src="img/logo/dhqghn_logo.png" class="img-logo img-logo-right img-reponsive"></a></div>
+            </div>
+            <div class="row">
+               <!--         <h2 class="text-center title-web">Hệ thống thi trực tuyến</h2>-->
+               <nav class="navbar navbar-inverse main-menu alert-info">
+                  <form class="navbar-form navbar-left search-form">
+                     <div class="form-group input-group">
+                        <input type="search" class="form-control" placeholder="Tìm kiếm tại đây...">
+                        <span class="input-group-addon"><a href="#"><span class="glyphicon glyphicon-search"></span></a></span>
+                     </div>
+                  </form>
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     </button>
+                  </div>
+                  <div class="navbar-collapse collapse" id="menu">
+                     <ul class="nav navbar-nav navbar">
+                        <li><a href="5.php"><span class="glyphicon glyphicon-home"></span> Trang chủ</a></li>
+                        <li class="dropdown">
+                           <a data-toggle="dropdown" href="" class="pages"><span class="glyphicon glyphicon-user"></span>
+                           Tài khoản</a>
+                           <ul class="dropdown-menu">
+                              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Hồ sơ</a></li>
+                              <form method="GET">
+                                 <li><button name="btn-logout" class="btn btn-link btn-logout" type="submit"><i class="fa fa-sign-out"></i> Đăng xuất</button></li>
+                              </form>
+                           </ul>
+                        </li>
+                        <li class="dropdown">
+                           <a data-toggle="dropdown" href="" class="pages"><i class="fa fa-book" aria-hidden="true"></i>
+                           Pages</a>
+                           <ul class="dropdown-menu">
+                              <li><a href="2.html">Trang bắt đầu thi</a></li>
+                              <li><a href="1.html">Trang thi</a></li>
+                              <li><a href="4.html">Trang đăng ký</a></li>
+                              <li><a href="3.html">Trang profile</a></li>
+                              <li><a href="5.html">Trang chủ</a></li>
+                           </ul>
+                        </li>
+                        <!--                   contact us-->
+                        <li class="dropdown">
+                           <a href="" class="pages"   data-toggle="modal"
+                              data-target="#contact_form"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> Phản hồi</a>
+                        </li>
+                        <!--                   end contact us-->
+                        <!--                   form login-->
+                        <li class="dropdown">
+                           <a data-toggle="dropdown" href="" class="pages"><i class="fa fa-sign-in" aria-hidden="true"></i> Đăng nhập</a>
+                           <ul id="login-dp" class="dropdown-menu">
+                              <li>
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       Đăng nhập bằng
+                                       <div class="social-buttons">
+                                          <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                          <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                       </div>
+                                       hoặc
+                                       <form class="form" role="form" method="post" action="" accept-charset="UTF-8" id="login-nav">
+                                          <div class="form-group">
+                                             <label class="sr-only" for="exampleInputEmail2">Email</label>
+                                             <input name="email-login" type="text" class="form-control" placeholder="Email..." required>
+                                          </div>
+                                          <div class="form-group">
+                                             <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                             <input name="password-login" type="password" class="form-control" placeholder="Mật khẩu..." required>
+                                             <div class="help-block text-right"><a href="">Quên mật khẩu ?</a></div>
+                                          </div>
+                                          <div class="form-group">
+                                             <button name="btn-login" type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
+                                          </div>
+                                       </form>
+                                    </div>
+                                    <div class="bottom text-center">
+                                       Bạn chưa có tài khoản? <a href="index.php"><b>Đăng ký</b></a>
+                                    </div>
+                                 </div>
+                              </li>
+                           </ul>
+                        </li>
+                        <!--                   end form login-->
+                        <li><a href="admin/index.html"><span class="glyphicon glyphicon-cog"></span> Admin</a></li>
+                     </ul>
+                  </div>
+               </nav>
+               <!--          contact form-->
+               <div class="modal fade"  id="contact_form" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="">
+                        <div class="col-centered">
+                           <div class="panel panel-default">
+                              <div class="panel-heading" >
+                                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                                 <h1 class="title_contact_form">Gửi phản hồi cho chúng tôi</h1>
+                              </div>
+                              <form action="" method="POST">
+                                 <div class="panel-body">
+                                    <div class="form-group">
+                                       <div class="input-group">
+                                          <span class="input-group-addon"><i class="glyphicon glyphicon-user blue"></i></span>
+                                          <input type="text" name="InputName" placeholder="Tên của bạn" class="form-control" autofocus="autofocus" required>
+                                       </div>
+                                    </div>
+                                    <div class="form-group">
+                                       <div class="input-group">
+                                          <span class="input-group-addon"><i class="glyphicon glyphicon-envelope blue"></i></span>
+                                          <input type="email" name="InputEmail" placeholder="Email" class="form-control" required>
+                                       </div>
+                                    </div>
+                                    <div class="form-group">
+                                       <div class="input-group">
+                                          <span class="input-group-addon"><i class="glyphicon glyphicon-phone blue"></i></span>
+                                          <input type="text" name="InputCno" placeholder="Số điện thoại" class="form-control" required>
+                                       </div>
+                                    </div>
+                                    <div class="form-group">
+                                       <div class="input-group">
+                                          <span class="input-group-addon"><i class="glyphicon glyphicon-comment blue"></i></span>
+                                          <textarea name="InputMessage" rows="6" class="form-control" type="text" required></textarea>
+                                       </div>
+                                    </div>
+                                    <div class="">
+                                       <button type="submit" class="btn btn-info pull-right">Gửi <span class="glyphicon glyphicon-send"></span></button>
+                                       <button type="reset" value="Reset" name="reset" class="btn">Reset <span class="glyphicon glyphicon-refresh"></span></button>
+                                    </div>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--          end contact form-->
+            </div>
+         </div>
+      </div>
+      <!--       end header-->
+      <div class="container">
+         <div class="row">
+            <ul class="breadcrumb">
+               <li><a href="#"><span class="glyphicon glyphicon-home"></span> Trang chủ</a></li>
+               <li><a href="#">Tài khoản</a></li>
+            </ul>
+         </div>
+      </div>
+      <div id="profile-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-2">
+                  <ul class="nav nav-tabs nav-stacked">
+                     <li class="active"><a href="#inf" data-toggle="tab">Thông tin chung</a></li>
+                     <li><a href="#secu" data-toggle="tab">Bảo mật tài khoản</a></li>
+                     <li><a href="#his" data-toggle="tab">Lịch sử</a></li>
+                  </ul>
+               </div>
+               <div class="col-sm-10">
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="inf">
+                        <h4 class="text-center">Thông tin chung</h4>
+                        <div class="col-sm-8">
+                           <form role="form">
+                              <div class="form-group">
+                                 <label>Họ và tên</label>
+                                 <input type="text" class="form-control" value="Nguyễn Thị Nhàn">
+                              </div>
+                              <div class="form-group">
+                                 <label>Ngày sinh</label>
+                                 <input type="DATE" class="form-control" placeholder="Chọn ngày sinh">
+                              </div>
+                              <div class="form-group">
+                                 <label>Giới tính</label><br>
+                                 <input type="radio" name="gender" value="nam"> Nam<br>
+                                 <input type="radio" name="gender" value="nu"> Nữ
+                              </div>
+                              <div class="form-group">
+                                 <label>Quê</label>
+                                 <input type="text" class="form-control" value="Hưng Yên">
+                              </div>
+                              <div class="form-group">
+                                 <label>Số điện thoại</label>
+                                 <input type="text" class="form-control" value="01633461337">
+                              </div>
+                              <div class="form-group">
+                                 <label>Email</label>
+                                 <input type="email"  class="form-control"  value="nhannt97hy@gmail.com">
+                              </div>
+                              <div class="form-group">
+                                 <div class="form-group">
+                                    <input type="submit" class="btn btn-info" value="Cập nhật">
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                        <div class="col-sm-4">
+                           <img src="img/hinata.jpg" class="img-thumbnail" class="img-responsive">
+                           <input type="file">
+                        </div>
+                     </div>
+                     <div class="tab-pane" id="his">
+                        <h4 class="text-center">Lịch sử các bài kiểm tra</h4>
+                        <div class="row">
+                           <div class="col-sm-2">
+                              <p>Ngày 1/2/2017</p>
+                           </div>
+                           <div class="col-sm-10">
+                              <p><em>Bài kiểm tra 15' Dao động điều hòa</em></p>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-sm-2">
+                              <p>Ngày 2/2/2017</p>
+                           </div>
+                           <div class="col-sm-10">
+                              <p><em>Bài kiểm tra 45' Toán</em></p>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-sm-2">
+                              <p>Ngày 3/2/2017</p>
+                           </div>
+                           <div class="col-sm-10">
+                              <p><em>Bài kiểm tra 15' Tiếng Việt</em></p>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-sm-2">
+                              <p>Ngày 4/2/2017</p>
+                           </div>
+                           <div class="col-sm-10">
+                              <p><em>Bài kiểm tra 15' Hóa</em></p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="tab-pane" id="secu">
+                        <h4 class="text-center">Thay đổi mật khẩu</h4>
+                        <form role="form">
+                           <div class="form-group">
+                              <label>Mật khẩu cũ</label>
+                              <input type="password" class="form-control">
+                           </div>
+                           <div class="form-group">
+                              <label >Mật khẩu mới</label>
+                              <input type="password" class="form-control">
+                           </div>
+                           <div class="form-group">
+                              <label>Xác nhận mật khẩu mới</label>
+                              <input type="password"  class="form-control">
+                           </div>
+                           <div class="form-group">
+                              <input type="submit" class="btn btn-info" value="Cập nhật">
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-2 paddingtop-bottom">
+                  <a href="http://uet.vnu.edu.vn/" target="_blank"><img src="img/Logo_UET.jpg" class="img-responsive logo-footer img-circle"></a>
+               </div>
+               <div class="col-md-3  footerleft ">
+                  <h6 class="heading7">Location & Contacts</h6>
+                  <p><i class="fa fa-home"></i> Đại học Công nghệ - 144 Xuân Thủy, Cầu Giấy, Hà Nội </p>
+                  <p><i class="fa fa-phone"></i> Phone : 01678238831</p>
+                  <p><i class="fa fa-phone"></i> Phone : 01232081097</p>
+                  <p><i class="fa fa-envelope"></i> E-mail: hotro.thitructuyen@gmail.com</p>
+                  <p><i class="fa fa-envelope"></i> E-mail: contact.thitructuyen@gmail.com</p>
+               </div>
+               <div class="col-md-4  paddingtop-bottom">
+                  <h6 class=" heading7">Discover</h6>
+                  <div class="post">
+                     <p>Giáo dục là vũ khí mạnh nhất mà người ta có thể sử dụng để thay đổi cả thế giới. <span>N.Mandela</span>
+                     </p>
+                     <p>Nhà trường chỉ cho chúng ta chiếc chìa khóa tri thức, học trong cuộc sống là công việc cả đời. <span>Bill Gates</span>
+                     </p>
+                     <p>Nếu phiên bản đầu tiên của bạn không thành công, hãy đặt tên nó là phiên bản 1.0 </p>
+                  </div>
+               </div>
+               <div class="col-md-3 paddingtop-bottom">
+                  <h6 class="heading7">Newsletter</h6>
+                  <div class="row">
+                     <ul class="social">
+                        <ul class="list-inline">
+                           <li><a href="#" title=""><i class="fa fa-facebook"></i></a>
+                           </li>
+                           <li><a href="#" title=""><i class="fa fa-twitter"></i></a>
+                           </li>
+                           <li><a href="#" title=""><i class="fa fa-google-plus"></i></a>
+                           </li>
+                           <li><a href="#" title=""><i class="fa fa-linkedin"></i></a>
+                           </li>
+                        </ul>
+                     </ul>
+                  </div>
+                  <div>
+                     <form class="form-group">
+                        <p>Nhập email của bạn tại đây, chúng tôi sẽ gửi mail cho bạn khi có thông tin hữu ích!</p>
+                        <input type="email" class="form-control" placeholder="Nhập email của bạn...">
+                        <button class="btn btn-info btn-block">Gửi</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <div class="copyright">
+         <div class="container-fluid">
+            <div class="row navbar navbar-inverse">
+               <ul class="nav navbar-nav coppy col-sm-4 col-xs-12">
+                  <li><a href="5.php">Trang Chủ</a></li>
+                  <li><a href="#">Cài Đặt</a></li>
+                  <li><a href="#">Đăng Kí</a></li>
+                  <li><a href="#">Theo Dõi</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

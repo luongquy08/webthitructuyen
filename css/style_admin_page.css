@@ -1,0 +1,58 @@
+/*style admin page*/
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+body{margin-top:20px;}
+.fa-fw {width: 2em;}
+
+/*style home tab*/
+.panel-body .btn:not(.btn-block) { width:120px;margin-bottom:10px; }
+/*end style home tab*/
+
+/*style header*/
+#menu{
+    border-color: #2a70b8!important;
+}
+.btn-login-logout{
+    border-color: #2a70b8!important;
+}
+.main-menu{
+    background-color: #2a70b8 !important;
+    border-color: #2a70b8 !important;
+}
+.title-web{
+    color: blue;
+}
+.search-form{
+    border: none !important;
+}
+#menu .navbar-nav > li > a {
+    color: #2a70b8;
+    text-shadow: none !important;
+}
+#menu .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #222222;
+    background-color: transparent;
+}
+.pages{
+    color: #222222;
+    background-color: transparent !important;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #222222;
+}
+/*end style header*/
+
+/*panel align center*/
+.col-centered{
+    float: none;
+    margin: 0 auto;
+    padding-top:5px;
+}
+.btn-tab-home{
+    width: 133px !important;
+}
+.btn-logout{
+    color: #333 !important;
+}
+.btn-logout:hover{
+    color: #2a70b8 !important;
+}
